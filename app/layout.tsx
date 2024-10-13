@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins } from 'next/font/google'
 import { ThemeProvider } from "@/components/theme-provider";
-import ThemeToggle from "@/components/shared/ThemeToggle";
 
 const poppins = Poppins({ weight: '400', subsets: ['latin'] })
 
@@ -27,7 +26,6 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <ThemeToggle/>
             {children}
           </ThemeProvider>
       </body>
