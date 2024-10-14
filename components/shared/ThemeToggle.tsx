@@ -36,7 +36,7 @@ const ThemeToggle = () => {
       ) : (
         <Moon
           onClick={enableDarkMode}
-          className="transition ease-in-out hover:rotate-45 max-sm:stroke-white"
+          className="transition ease-in-out hover:rotate-45 dark:stroke-white stroke-black"
         />
       )}
     </Toggle>

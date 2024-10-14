@@ -25,8 +25,10 @@ export default function Signup() {
 
     console.log('Signup attempt with:', name, email, password)
     // Redirect to dashboard after successful signup
-    if (password === confirmPassword)
-    router.push('/')
+    if (password === confirmPassword){
+      localStorage.setItem('login', 'true');
+      router.push('/');
+    }
     else
     alert("Passwords do not match")
   }

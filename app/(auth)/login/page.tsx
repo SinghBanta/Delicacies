@@ -22,6 +22,8 @@ export default function Login() {
     }
 
     console.log('Login attempt with:', email, password)
+    // Save login state in local storage
+    localStorage.setItem('login', 'true');
     // Redirect to dashboard after successful login
     router.push('/')
   }
